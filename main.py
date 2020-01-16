@@ -42,8 +42,8 @@ test_images = test_images / 255
 # in this instance it would be 10 minimum, as we only have ten varieties of items.
 model = ker.Sequential([
     ker.layers.Flatten(input_shape=(28, 28)),
-    ker.layers.Dense(10, activation="relu"),
-    ker.layers.Dense(9, activation="softmax")
+    ker.layers.Dense(100, activation="relu"),
+    ker.layers.Dense(10, activation="softmax")
 ])
 
 #
@@ -63,11 +63,61 @@ model.compile(optimizer="adam",
 #
 model.fit(train_images, train_labels, epochs=1)
 
+'''
+to view the images, adjust the values between 0-9, as there are only 10 images, 
+the value -1 in python indicates the last value in the array.  
+plt.figure()
+plt.imshow(train_images[-1])
+plt.colorbar()
+plt.grid(False)
+plt.show()
+'''
 # .
 # to see how this works we can set these values test loss and test accuracy.
 # the print these vars.
+#test_loss, test_acc = model.evaluate(test_images, test_labels)
+#print("test accuracy:",  test_acc , '\ntest loss:', test_loss)
 #
-# .
-test_loss, test_acc = model.evaluate(test_images, test_labels)
+#
 
-print("test accuracy:",  test_acc , '\ntest loss:', test_loss)
+
+'''
+as we will continually train the model, we may want to save.
+'''
+
+# after testing we can use the model.
+# The model.predict,
+# takes in a list, what we need to do is put the array into a list.
+# as test_images is already in a list by itself, we only give that one list,
+# indicating that other list will need to become a list of list such as .predict([list1, list1])
+prediction = model.predict(test_images)
+'''
+the output is only ten values, as we only have ten neurons.
+representing how the model thinks of each different class. 
+print(prediction)
+'''
+# if there was a need for a particular value within the prediction list,
+# we can still use [] for random access.
+
+'''
+now if we wanted to select the max we can use the argmax from the numpy library. 
+this this case we want the max from the last value in the list. 
+this is the index so say it returns 5, then its indicating that sandal is what the model sees 
+as being predicted. 
+print(np.argmax(prediction[-1]))
+'''
+'''
+to take this a step further with the list of names, this gives us back the name, 
+now we can just past that index into the class names list, which is sandal. 
+print(class_name[np.argmax(prediction[-1])])
+'''
+
+# here we'll dress up the solution to show the pictures and the prediction image.
+for index in range(5):
+    plt.grid(False)
+    plt.imshow(test_images[index], cmap=plt.cm.binary)
+    plt.xlabel("True image: " + class_name[test_labels[index]])
+    plt.title("prediction image: " + class_name[np.argmax(prediction[index])])
+    plt.ylabel("the predicted value: " + str(np.argmax(prediction[index])))
+    plt.show()
+
