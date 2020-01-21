@@ -3,15 +3,32 @@ from tensorflow import keras as ker
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+'''
+this dataset is a CIFAR10 small image classification
+what is returned are 2 tuples.
+
+'''
 data = ker.datasets.fashion_mnist
 
+'''
+here 2 tuples are loaded one for the test and one for the traing
+the x images or train images, and the y labels or train labels
+so (x-train, y-train) , (x-test, y-test) = data.load_data()
+consider that the images are predictors, and then the labels are 
+run through the algorithm, which is supervised
+The algorithm produces a model used at run time. 
+'''
 # Testing data and Training data.
 (train_images, train_labels), (test_images, test_labels) = data.load_data()
 
 # Label names.
 class_name = ['t-shirt', 'pants', 'pullover', 'dress', 'coat',
               'sandal', 'shirt', 'shoes', 'bag', 'boots']
-
+'''
+bellow we ensure that the samples go from there integer representation 
+to teh floating point representation. 
+'''
 train_images = train_images / 255
 test_images = test_images / 255
 
@@ -43,6 +60,7 @@ test_images = test_images / 255
 model = ker.Sequential([
     ker.layers.Flatten(input_shape=(28, 28)),
     ker.layers.Dense(100, activation="relu"),
+    ker.layers.Dropout(0.2),
     ker.layers.Dense(10, activation="softmax")
 ])
 
