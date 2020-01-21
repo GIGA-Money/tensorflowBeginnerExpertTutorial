@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 '''
 this dataset is a CIFAR10 small image classification
 what is returned are 2 tuples.
-
 '''
+
 data = ker.datasets.fashion_mnist
 
 '''
-here 2 tuples are loaded one for the test and one for the traing
+here 2 tuples are loaded one for the test and one for the training
 the x images or train images, and the y labels or train labels
 so (x-train, y-train) , (x-test, y-test) = data.load_data()
 consider that the images are predictors, and then the labels are 
@@ -53,7 +53,9 @@ test_images = test_images / 255
 # this picks values for each neuron so that each value adds up to 1
 # meaning we can look at the last layer and see the probability or what the network thinks per given class.
 # we can find more activation layers here https://keras.io/activations/
-#
+# and here https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense
+# the dropout layer, consist in randomly setting a fraction rate of input units
+# to 0 at each update during training time, a way to prevent over-fitting.
 
 # the output layer, the values must be at a minimum equal to the number items tested for.
 # in this instance it would be 10 minimum, as we only have ten varieties of items.
