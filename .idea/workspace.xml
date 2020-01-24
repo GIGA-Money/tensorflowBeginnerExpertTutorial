@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="898ba5ba-844b-4fdd-9f53-c71a2991070c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/expertTutorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/beginnerTutorial.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,13 @@
   <component name="FavoritesManager">
     <favorites_list name="camptut" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -41,10 +51,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Fall 19/adv db/project1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/expertTutorial.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.expert">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="camptut" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,7 +77,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="camptut" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="beginner" type="PythonConfigurationType" factoryName="Python">
+      <module name="camptut" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\GIGA-Money\AppData\Local\Programs\Python\conda\envs\camptut\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beginnerTutorial.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="expert" type="PythonConfigurationType" factoryName="Python">
       <module name="camptut" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,7 +109,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/expertTutorial.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,6 +118,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.beginner" />
+      <item itemvalue="Python.expert" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -112,6 +148,10 @@
       <workItem from="1579120652528" duration="9901000" />
       <workItem from="1579197881119" duration="5314000" />
       <workItem from="1579624130006" duration="6346000" />
+      <workItem from="1579809243553" duration="138000" />
+      <workItem from="1579809428459" duration="597000" />
+      <workItem from="1579810614072" duration="12000" />
+      <workItem from="1579812422834" duration="3684000" />
     </task>
     <servers />
   </component>
@@ -119,18 +159,28 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="79" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579122207979">
-      <screen x="0" y="0" width="2496" height="1080" />
+    <state x="0" y="118" key="#Inspections" timestamp="1579812686338">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
+    <state x="0" y="118" key="#Inspections/0.0.1856.1080@0.0.1856.1080" timestamp="1579812686338" />
+    <state x="59" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579812602770">
+      <screen x="0" y="0" width="1856" height="1080" />
+    </state>
+    <state x="59" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1856.1080@0.0.1856.1080" timestamp="1579812602770" />
     <state x="79" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2496.1080@0.0.2496.1080" timestamp="1579122207979" />
+    <state x="335" y="241" key="FileChooserDialogImpl" timestamp="1579812582395">
+      <screen x="0" y="0" width="1856" height="1080" />
+    </state>
+    <state x="335" y="241" key="FileChooserDialogImpl/0.0.1856.1080@0.0.1856.1080" timestamp="1579812582395" />
     <state x="17" y="100" key="SettingsEditor" timestamp="1579121801362">
       <screen x="0" y="0" width="2496" height="1080" />
     </state>
     <state x="17" y="100" key="SettingsEditor/0.0.2496.1080@0.0.2496.1080" timestamp="1579121801362" />
-    <state x="459" y="229" key="com.intellij.ide.util.TipDialog" timestamp="1579624171533">
-      <screen x="0" y="0" width="1302" height="768" />
+    <state x="654" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1579812422874">
+      <screen x="0" y="0" width="1856" height="1080" />
     </state>
     <state x="459" y="229" key="com.intellij.ide.util.TipDialog/0.0.1302.768@0.0.1302.768" timestamp="1579624171533" />
+    <state x="654" y="322" key="com.intellij.ide.util.TipDialog/0.0.1856.1080@0.0.1856.1080" timestamp="1579812422874" />
     <state x="879" y="322" key="com.intellij.ide.util.TipDialog/0.0.2496.1080@0.0.2496.1080" timestamp="1579197883644" />
   </component>
 </project>
